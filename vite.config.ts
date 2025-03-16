@@ -22,7 +22,7 @@ export default defineConfig({
       reporter: ['text', 'json', 'html'],
     },
     globals: true,
-    environment: 'happydom',
+    environment: 'happy-dom',
     setupFiles: './src/setupTests.ts',
   },
 });
