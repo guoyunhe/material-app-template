@@ -7,7 +7,6 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.rulers": [100],
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -42,5 +41,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "typescript.tsdk": "node_modules/typescript/lib",
-  "stylelint.validate": ["css", "scss", "less"]
+  "stylelint.validate": ["css", "scss", "less"],
+  "editor.rulers": [100]
 }
