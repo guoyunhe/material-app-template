@@ -80,7 +80,6 @@
     "typescript": "^5.8.2",
     "vite": "^7.0.0",
     "vite-plugin-adsense": "^1.1.1",
-    "vite-plugin-ejs": "^1.7.0",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.7"
   }
