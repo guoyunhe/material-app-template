@@ -2,7 +2,7 @@ import { AuthProvider, RequireAuth } from '@guoyunhe/react-auth';
 import { CircularProgress } from '@mui/material';
 import { MaterialApp } from 'material-app';
 import { lazy, Suspense } from 'react';
-import { FetchConfigProvider, IndexedDBStore } from 'react-fast-fetch';
+import { CacheStore, FetchProvider } from 'react-fast-fetch';
 import { Route, Switch } from 'wouter';
 import xior from 'xior';
 import { themes } from './config/theme';
@@ -32,12 +32,12 @@ const AdminDashboardPage = lazy(() => import('./pages/admin-dashboard'));
 const AdminUserListPage = lazy(() => import('./pages/admin-user-list'));
 const AdminSettingsPage = lazy(() => import('./pages/admin-settings'));
 
-const store = new IndexedDBStore({ limit: 10000 });
+const store = new CacheStore();
 const fetcher = (url: string) => xior.get(url).then((res) => res.data);
 
 export default function App() {
   return (
-    <FetchConfigProvider store={store} fetcher={fetcher}>
+    <FetchProvider store={store} fetcher={fetcher}>
       <Suspense
         fallback={
           <CircularProgress
@@ -95,6 +95,6 @@ export default function App() {
           </AuthProvider>
         </MaterialApp>
       </Suspense>
-    </FetchConfigProvider>
+    </FetchProvider>
   );
 }
