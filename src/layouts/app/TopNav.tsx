@@ -1,6 +1,6 @@
 import { Menu as MenuIcon } from '@mui/icons-material';
 import { AppBar, Box, IconButton, Toolbar, Typography } from '@mui/material';
-import { ThemeIconButton } from 'material-app';
+import { ThemeToggle } from 'material-app';
 
 export interface TopNavProps {
   onMenuButtonClick: () => void;
@@ -17,7 +17,7 @@ export default function TopNav({ onMenuButtonClick }: TopNavProps) {
           {import.meta.env.VITE_APP_NAME}
         </Typography>
         <Box flexGrow={1} />
-        <ThemeIconButton />
+        <ThemeToggle />
       </Toolbar>
     </AppBar>
   );
