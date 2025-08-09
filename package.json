@@ -4,6 +4,7 @@
   "imports": {
     "#bootstrap/*": "./src/bootstrap/*.ts",
     "#components/*": "./src/components/*.tsx",
+    "#config/*": "./src/config/*.ts",
     "#pages/*": "./src/pages/*.tsx",
     "#types/*": "./src/types/*.ts",
     "#utils/*": "./src/utils/*.ts"
