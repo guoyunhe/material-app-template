@@ -1,8 +1,7 @@
 import { languages } from '#config/i18n';
 import RequestStatus from '#types/enums/RequestStatus';
-import User from '#types/models/User';
 import getFieldError from '#utils/getFieldError';
-import { useAuth } from '@guoyunhe/react-auth';
+import { useAuthUser } from '@guoyunhe/react-auth';
 import { Save as SaveIcon } from '@mui/icons-material';
 import {
   Alert,
@@ -20,7 +19,7 @@ import xior from 'xior';
 
 export default function LanguageCard() {
   const { t, i18n } = useTranslation();
-  const { user, setUser } = useAuth<User>();
+  const [user, setUser] = useAuthUser();
   const [locale, setLocale] = useState(user?.locale || i18n.language);
   const [status, setStatus] = useState(RequestStatus.Idle);
   const [errors, setErrors] = useState<any>(null);

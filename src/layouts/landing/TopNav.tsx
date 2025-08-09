@@ -1,4 +1,4 @@
-import LanguageMenu from '#components/language-menu';
+import LanguageMenu from '#components/LanguageMenu';
 import { AuthStatus, useAuthStatus, useAuthUser, useLogout } from '@guoyunhe/react-auth';
 import {
   AutoAwesome as AutoAwesomeIcon,

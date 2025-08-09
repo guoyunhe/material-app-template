@@ -1,4 +1,4 @@
-import Footer from '#components/footer';
+import Footer from '#components/Footer';
 import { Box } from '@mui/material';
 import { ReactNode, useState } from 'react';
 import LeftNav from './LeftNav';
