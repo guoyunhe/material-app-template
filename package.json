@@ -2,6 +2,7 @@
   "private": true,
   "type": "module",
   "imports": {
+    "#bootstrap/*": "./src/bootstrap/*.ts",
     "#components/*": "./src/components/*.tsx",
     "#pages/*": "./src/pages/*.tsx",
     "#types/*": "./src/types/*.ts",
