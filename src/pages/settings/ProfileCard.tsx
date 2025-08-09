@@ -1,11 +1,11 @@
+import User from '#types/models/User';
+import getFieldError from '#utils/getFieldError';
 import { useAuth } from '@guoyunhe/react-auth';
 import { Save as SaveIcon } from '@mui/icons-material';
 import { Alert, Box, Button, Card, CardContent, CardHeader, TextField } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import xior from 'xior';
-import User from '~/types/models/User';
-import getFieldError from '~/utils/getFieldError';
 
 export default function ProfileCard() {
   const { t } = useTranslation();

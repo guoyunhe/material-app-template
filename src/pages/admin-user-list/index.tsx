@@ -1,10 +1,10 @@
+import PaginatedResult from '#types/PaginatedResult';
+import User from '#types/models/User';
 import { Container, List, Pagination, Typography } from '@mui/material';
 import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSearchParams } from 'wouter';
 import xior from 'xior';
-import PaginatedResult from '~/types/PaginatedResult';
-import User from '~/types/models/User';
 import UserCard from './UserCard';
 
 export default function AdminUserListPage() {

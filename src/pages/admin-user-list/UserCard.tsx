@@ -1,9 +1,9 @@
+import User from '#types/models/User';
 import { Delete as DeleteIcon } from '@mui/icons-material';
 import { Avatar, Button, ListItem, ListItemAvatar, ListItemText } from '@mui/material';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import xior from 'xior';
-import User from '~/types/models/User';
 
 export interface UserCardProps {
   user: User;

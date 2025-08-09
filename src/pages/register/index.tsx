@@ -1,8 +1,8 @@
+import getFieldError from '#utils/getFieldError';
 import { useRegister } from '@guoyunhe/react-auth';
 import { Alert, Button, Stack, TextField } from '@mui/material';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import getFieldError from '~/utils/getFieldError';
 
 export default function RegisterPage() {
   const { t } = useTranslation();

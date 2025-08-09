@@ -1,12 +1,12 @@
+import RequestStatus from '#types/enums/RequestStatus';
+import Image from '#types/models/Image';
+import User from '#types/models/User';
 import { useAuthUser } from '@guoyunhe/react-auth';
 import { Delete as DeleteIcon, Upload as UploadIcon } from '@mui/icons-material';
 import { Avatar, Button, Card, CardContent, CardHeader, Stack } from '@mui/material';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import xior from 'xior';
-import RequestStatus from '~/types/enums/RequestStatus';
-import Image from '~/types/models/Image';
-import User from '~/types/models/User';
 
 const avatarSize = 128;
 

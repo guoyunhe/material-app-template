@@ -1,10 +1,10 @@
+import RequestStatus from '#types/enums/RequestStatus';
+import getFieldError from '#utils/getFieldError';
 import { Save as SaveIcon } from '@mui/icons-material';
 import { Alert, Box, Button, Card, CardContent, CardHeader, TextField } from '@mui/material';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import xior from 'xior';
-import RequestStatus from '~/types/enums/RequestStatus';
-import getFieldError from '~/utils/getFieldError';
 
 export default function PasswordCard() {
   const { t } = useTranslation();

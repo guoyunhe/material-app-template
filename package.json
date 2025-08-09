@@ -1,6 +1,12 @@
 {
   "private": true,
   "type": "module",
+  "imports": {
+    "#components/*": "./src/components/*.tsx",
+    "#pages/*": "./src/pages/*.tsx",
+    "#types/*": "./src/types/*.ts",
+    "#utils/*": "./src/utils/*.ts"
+  },
   "scripts": {
     "build": "vite build",
     "ci:eslint": "eslint -f json src -o ./.ci/eslint.json",

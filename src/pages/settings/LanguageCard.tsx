@@ -1,3 +1,7 @@
+import { languages } from '#config/i18n';
+import RequestStatus from '#types/enums/RequestStatus';
+import User from '#types/models/User';
+import getFieldError from '#utils/getFieldError';
 import { useAuth } from '@guoyunhe/react-auth';
 import { Save as SaveIcon } from '@mui/icons-material';
 import {
@@ -13,10 +17,6 @@ import {
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import xior from 'xior';
-import { languages } from '~/config/i18n';
-import RequestStatus from '~/types/enums/RequestStatus';
-import User from '~/types/models/User';
-import getFieldError from '~/utils/getFieldError';
 
 export default function LanguageCard() {
   const { t, i18n } = useTranslation();

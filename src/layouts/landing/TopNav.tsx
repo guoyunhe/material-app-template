@@ -1,3 +1,4 @@
+import LanguageMenu from '#components/language-menu';
 import { AuthStatus, useAuthStatus, useAuthUser, useLogout } from '@guoyunhe/react-auth';
 import {
   AutoAwesome as AutoAwesomeIcon,
@@ -14,7 +15,6 @@ import { AppBar, Avatar, Box, Button, IconButton, Stack, Toolbar, Typography } f
 import { ThemeToggle } from 'material-app';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'wouter';
-import LanguageMenu from '~/components/language-menu';
 
 export interface TopNavProps {
   onMenuButtonClick: () => void;
