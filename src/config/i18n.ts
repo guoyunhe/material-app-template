@@ -6,11 +6,11 @@ import { initReactI18next } from 'react-i18next';
 export const languages = [
   {
     value: 'en',
-    label: 'English',
+    label: '🇬🇧 English',
   },
   {
     value: 'zh',
-    label: '中文',
+    label: '🇨🇳 中文',
   },
 ];
 
